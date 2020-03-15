@@ -23,19 +23,19 @@ public class Block {
         this.timeStamp = timeStamp;
     }
 
-    public String mineBlock(int prefix) {
-        String prefixString = new String(new char[prefix]).replace('\0', '0');
-        while (!hash.substring(0, prefix).equals(prefixString)) {
+    public String calculateBlockHash() {
+        String dataToHash = previousHash + timeStamp + nonce + data;
+        byte[] bytes = digest(dataToHash);
+        return bytesAsString(bytes);
+    }
+
+    public String mineBlock(int difficulty) {
+        String prefixString = new String(new char[difficulty]).replace('\0', '0');
+        while (!hash.substring(0, difficulty).equals(prefixString)) {
             nonce++;
             hash = calculateBlockHash();
         }
         return hash;
-    }
-
-    private String calculateBlockHash() {
-        String dataToHash = previousHash + timeStamp + nonce + data;
-        byte[] bytes = digest(dataToHash);
-        return bytesAsString(bytes);
     }
 
     private byte[] digest(String dataToHash) {
@@ -43,7 +43,7 @@ public class Block {
              return MessageDigest.getInstance("SHA-256")
                     .digest(dataToHash.getBytes("UTF-8"));
         } catch (Exception ex) {
-           return null;
+           return new byte[0];
         }
     }
 
