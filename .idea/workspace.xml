@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b92b5a0d-3d32-4da7-a846-8000487115a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/StringUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kingbom/blockchain/BlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kingbom/blockchain/BlockTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,16 +15,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43919885">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="232">
-                  <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="16" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#620#621#0" expanded="true" />
+                    <element signature="e#703#704#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -37,12 +39,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/kingbom/blockchain/BlockTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="267">
-                  <caret line="39" column="62" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="62" />
+                <state relative-caret-position="123">
+                  <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1847#1848#0" expanded="true" />
-                    <element signature="e#1920#1921#0" expanded="true" />
+                    <element signature="e#1858#1859#0" expanded="true" />
+                    <element signature="e#1931#1932#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -72,14 +74,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kingbom/blockchain/BlockTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="481" />
-    <option name="y" value="23" />
+    <option name="x" value="679" />
+    <option name="y" value="54" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
   </component>
@@ -136,7 +139,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584277228473" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584278153798" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -252,7 +255,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584035969539</updated>
       <workItem from="1584035971192" duration="5892000" />
-      <workItem from="1584177487866" duration="11517000" />
+      <workItem from="1584177487866" duration="12498000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] new pojo class Block and add lombok lib">
       <created>1584037530908</created>
@@ -275,16 +278,17 @@
       <option name="project" value="LOCAL" />
       <updated>1584183008115</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[Add] add unit test validate blockchaint">
+      <created>1584277281609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584277281609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BlockTest_givenBlockChain_whenValidated_thenSuccess - 2020.03.15 at 19h 24m 25s.xml">
-      <configuration name="BlockTest.givenBlockChain_whenValidated_thenSuccess" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BlockTest - 2020.03.15 at 19h 31m 19s.xml">
-      <configuration name="BlockTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BlockTest - 2020.03.15 at 19h 32m 05s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
@@ -309,9 +313,15 @@
     <history-entry file="BlockTest - 2020.03.15 at 19h 46m 21s.xml">
       <configuration name="BlockTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BlockTest - 2020.03.15 at 20h 10m 57s.xml">
+      <configuration name="BlockTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BlockTest - 2020.03.15 at 20h 14m 45s.xml">
+      <configuration name="BlockTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17409000" />
+    <option name="totallyTimeSpent" value="18390000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -330,7 +340,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.29470673" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.10658083" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -341,7 +351,7 @@
       <window_info active="true" anchor="bottom" id="Version Control" order="6" visible="true" weight="0.3253012" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5253012" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.30722892" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.2879518" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
@@ -363,7 +373,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.29470673" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.10658083" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -371,11 +381,11 @@
       <window_info anchor="bottom" id="SonarLint" order="3" />
       <window_info anchor="bottom" id="JProfiler" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32605729" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3253012" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.5253012" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.3385542" />
+      <window_info active="true" anchor="bottom" id="Find" order="9" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.30722892" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.2879518" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -438,7 +448,9 @@
     <MESSAGE value="[Add] new pojo class Block and add lombok lib" />
     <MESSAGE value="[Add] hash data , mining block  and unit est" />
     <MESSAGE value="[Delete] delete class BlockBuilder" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Delete] delete class BlockBuilder" />
+    <MESSAGE value="[Add] add unit test validate blockchaint" />
+    <MESSAGE value="[Add] refactor code to add string util to sha256" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] refactor code to add string util to sha256" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Block.java" />
@@ -647,24 +659,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/kingbom/blockchain/BlockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="62" />
+        <state relative-caret-position="123">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-            <element signature="e#1920#1921#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="true" />
+            <element signature="e#1931#1932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kingbom/blockchain/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
           </folding>
         </state>
       </provider>

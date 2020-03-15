@@ -3,7 +3,6 @@ package com.kingbom.blockchain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import java.security.MessageDigest;
 
 
 @Data
@@ -24,9 +23,7 @@ public class Block {
     }
 
     public String calculateBlockHash() {
-        String dataToHash = previousHash + timeStamp + nonce + data;
-        byte[] bytes = digest(dataToHash);
-        return bytesAsString(bytes);
+        return StringUtil.toSha256(previousHash + timeStamp + nonce + data);
     }
 
     public String mineBlock(int difficulty) {
@@ -36,20 +33,5 @@ public class Block {
             hash = calculateBlockHash();
         }
         return hash;
-    }
-
-    private byte[] digest(String dataToHash) {
-        try {
-             return MessageDigest.getInstance("SHA-256")
-                    .digest(dataToHash.getBytes("UTF-8"));
-        } catch (Exception ex) {
-           return new byte[0];
-        }
-    }
-
-    private String bytesAsString(byte[] bytes) {
-        StringBuffer buffer = new StringBuffer();
-        for (byte b : bytes) buffer.append(String.format("%02x", b));
-        return buffer.toString();
     }
 }
