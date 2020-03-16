@@ -1,5 +1,6 @@
 package com.kingbom.blockchain;
 
+import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.ArrayList;
 
@@ -11,8 +12,8 @@ public class Transaction {
     public float value;
     public byte[] signature; // this is to prevent anybody else from spending funds in our wallet.
 
-    public ArrayList<TransactionInput> inputs = new ArrayList<TransactionInput>();
-    public ArrayList<TransactionOutput> outputs = new ArrayList<TransactionOutput>();
+    public ArrayList<TransactionInput> inputs = new ArrayList<>();
+    public ArrayList<TransactionOutput> outputs = new ArrayList<>();
 
     private static int sequence = 0;
 
@@ -30,5 +31,15 @@ public class Transaction {
                       StringUtil.getStringFromKey(reciepient) +
                       value + sequence
         );
+    }
+
+    public void generateSignature(PrivateKey privateKey) {
+        String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + value;
+        signature = StringUtil.applyECDSASig(privateKey,data);
+    }
+
+    public boolean verifiySignature() {
+        String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + value;
+        return StringUtil.verifyECDSASig(sender, data, signature);
     }
 }
