@@ -1,8 +1,6 @@
 package com.kingbom.blockchain;
 
-import java.security.Key;
-import java.security.MessageDigest;
-import java.security.PublicKey;
+import java.security.*;
 import java.util.Base64;
 
 public class StringUtil {
@@ -19,8 +17,32 @@ public class StringUtil {
         }
     }
 
+    public static byte [] applyECDSASig(PrivateKey privateKey, String input) {
+        try {
+            Signature dsa;
+            dsa = Signature.getInstance("ECDSA", "BC");
+            dsa.initSign(privateKey);
+            byte[] strByte = input.getBytes();
+            dsa.update(strByte);
+            byte[] realSig = dsa.sign();
+            return realSig;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static boolean verifyECDSASig(PublicKey publicKey, String data, byte[] signature) {
+        try {
+            Signature ecdsaVerify = Signature.getInstance("ECDSA", "BC");
+            ecdsaVerify.initVerify(publicKey);
+            ecdsaVerify.update(data.getBytes());
+            return ecdsaVerify.verify(signature);
+        } catch(Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public static String getStringFromKey(Key key) {
         return Base64.getEncoder().encodeToString(key.getEncoded());
-
     }
 }
