@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b92b5a0d-3d32-4da7-a846-8000487115a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="15">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -73,6 +73,34 @@
               <item name="javablockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="javablockchain" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="javablockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javablockchain" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javablockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javablockchain" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="sonarlint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javablockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javablockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javablockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javablockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javablockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javablockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -84,7 +112,7 @@
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584381901821" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584382030195" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -204,7 +232,7 @@
       <updated>1584035969539</updated>
       <workItem from="1584035971192" duration="5892000" />
       <workItem from="1584177487866" duration="12717000" />
-      <workItem from="1584381619763" duration="282000" />
+      <workItem from="1584381619763" duration="409000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] new pojo class Block and add lombok lib">
       <created>1584037530908</created>
@@ -277,7 +305,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18891000" />
+    <option name="totallyTimeSpent" value="19018000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -305,8 +333,8 @@
       <window_info anchor="bottom" id="SonarLint" order="3" />
       <window_info anchor="bottom" id="JProfiler" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" visible="true" weight="0.3253012" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5253012" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3253012" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.5253012" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.30722892" />
@@ -641,10 +669,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javablockchain.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
